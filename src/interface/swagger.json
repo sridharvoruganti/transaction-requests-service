@@ -993,8 +993,8 @@
             "type": "string"          
           },
 
-          "AuthenticationVal": {
-            "title": "AuthenticationVal",
+          "PinValue": {
+            "title": "PinValue",
             "description": "Contains the authentication value. The format depends on the authentication type used in the AuthenticationInfo complex type.",
             "pattern": "^\\d{3,10}$|^\\S{1,64}$",
             "type": "string"
@@ -1562,8 +1562,8 @@
             "type": "object",
             "description": "Data model for the complex type AuthenticationValue",
             "properties": {
-              "authenticationVal": {
-                "$ref": "#/definitions/AuthenticationVal",
+              "pinValue": {
+                "$ref": "#/definitions/PinValue",
                 "description": "Authentication value."
               },
               "counter": {
@@ -1572,7 +1572,7 @@
               }
             },
             "required": [
-              "authenticationVal"
+              "pinValue"
             ]
         },
 
